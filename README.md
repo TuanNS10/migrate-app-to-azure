@@ -70,7 +70,7 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Storage*           | Basic                                            | 0.1 USD      |
 
 ## Architecture Explanation
-The azure web app was already built out, I only had to change the environment variables within config.py and refactor the notification flow within app.py. Everything else was already configured.
+This project was architectured with cost and performance in mind, after considering the small size of our application and our lack of needing a dynamic website allows us to pick a basic Azure app service.
 
 Splitting our notification and database into their own services allows us to:
 1. Scale only the services that need scaling in case of an influx of usage.
