@@ -71,8 +71,9 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 ## Architecture Explanation
 The azure web app was already built out, I only had to change the environment variables within config.py and refactor the notification flow within app.py. Everything else was already configured.
-Splitting our notification and database into their own services allows us to:
 
+Splitting our notification and database into their own services allows us to:
 1. Scale only the services that need scaling in case of an influx of usage.
 2. And still being able to only pay according to our usage.
+
 Thus our solution brings us the best features in terms of cost, scalability and even performance.
